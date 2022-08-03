@@ -1,7 +1,7 @@
 import { Icon } from "native-base";
 import { Path } from "react-native-svg";
 import { IIconProps } from "./types";
-import { defaultValues } from ".";
+import { defaultValues } from "./index";
 
 export const CheckIcon = (props: IIconProps) => {
   return (

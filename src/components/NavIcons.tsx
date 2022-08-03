@@ -1,6 +1,6 @@
 import { Icon } from "native-base";
 import { Mask, Path } from "react-native-svg";
-import { defaultValues } from ".";
+import { defaultValues } from "./index";
 import { IIconProps } from "./types";
 
 export const ProfileIcon = (props: IIconProps) => {
