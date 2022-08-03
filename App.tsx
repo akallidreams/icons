@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { AkIcons } from "./src";
 
 import { configure, getStorybookUI } from "@storybook/react-native";
 
@@ -16,6 +17,7 @@ export function App() {
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
+      <AkIcons.SocialIcons.Insta size="80px" color="grey" />
     </View>
   );
 }
