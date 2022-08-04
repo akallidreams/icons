@@ -10,11 +10,11 @@ export const CheckIcon = (props: IIconProps) => {
       width={props.size || defaultProps.size}
       height={props.size || defaultProps.size}
       fill="transparent"
-      viewBox="0 0 30 30"
+      viewBox="0 0 18 15"
     >
       <Path
-        d="M25.106 0 9.82 18.312l-4.958-5.939L0 18.198l4.958 5.94L9.852 30l4.862-5.825L30 5.863 25.106 0Z"
-        fill={props.color || defaultValues.color}
+        d="M15.064 0 5.892 9.156l-2.975-2.97L0 9.1l2.975 2.97L5.91 15l2.917-2.912L18 2.93 15.064 0Z"
+        fill={props.color || defaultProps.color}
       />
     </Svg>
   );

@@ -33,11 +33,6 @@ storiesOf("Navigation Icons", module)
       )}
     />
   ))
-  .add("Account", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.AccountIcon {...styles.iconProps} />}
-    />
-  ))
   .add("Close", () => (
     <ProviderContainer
       Component={() => <AkIcons.NavIcons.CloseIcon {...styles.iconProps} />}
@@ -86,4 +81,4 @@ storiesOf("Navigation Icons", module)
 
 //   .addDecorator((getStory) => <Center>{getStory()}</Center>)
 
-// Therms e check grossura, PDF change name component, logout resolution
+// Therms e check grossura, logout resolution

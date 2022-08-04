@@ -1,4 +1,4 @@
-import { Mask } from "react-native-svg";
+import { ClipPath, Defs, G, Mask } from "react-native-svg";
 import { defaultValues } from ".";
 import { IIconProps } from "./types";
 import Svg, { Path } from "react-native-svg";
@@ -62,24 +62,6 @@ export const PolicyIcon = (props: IIconProps) => {
   );
 };
 
-export const AccountIcon = (props: IIconProps) => {
-  return (
-    <Svg
-      width={props.size || defaultProps.size}
-      height={props.size || defaultProps.size}
-      fill="transparent"
-      viewBox="0 0 30 30"
-    >
-      <Path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M15 0a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12ZM15 18.2c-5.657 0-10.558 1.175-13 2.82a3.865 3.865 0 0 0-2 3.08 3.865 3.865 0 0 0 2 3.08C4.442 28.825 9.343 30 15 30s10.558-1.175 13-2.82a3.865 3.865 0 0 0 2-3.08 3.866 3.866 0 0 0-2-3.08c-2.442-1.645-7.343-2.82-13-2.82Zm0 2c3.715-.12 7.415.53 10.867 1.909a5.8 5.8 0 0 1 1.694 1.132 1.06 1.06 0 0 1 0 1.718 5.8 5.8 0 0 1-1.694 1.132A26.972 26.972 0 0 1 15 28c-3.715.12-7.415-.53-10.867-1.909a5.8 5.8 0 0 1-1.694-1.132 1.059 1.059 0 0 1 0-1.718 5.8 5.8 0 0 1 1.694-1.132A26.974 26.974 0 0 1 15 20.2Z"
-        fill={props.color || defaultProps.color}
-      />
-    </Svg>
-  );
-};
-
 export const ThermsIcon = (props: IIconProps) => {
   return (
     <Svg
@@ -93,7 +75,6 @@ export const ThermsIcon = (props: IIconProps) => {
         clipRule="evenodd"
         d="M3.455 11.222h22.09c1.356 0 2.455 1.144 2.455 2.556v2.555c0 1.412-1.099 2.556-2.454 2.556H3.454C2.099 18.889 1 17.745 1 16.333v-2.555c0-1.412 1.099-2.556 2.455-2.556Zm.245 2.556v2.555h21.6v-2.555H3.7ZM3.455 1h22.09C26.902 1 28 2.144 28 3.556V6.11c0 1.412-1.099 2.556-2.454 2.556H3.454C2.099 8.667 1 7.523 1 6.11V3.556C1 2.144 2.099 1 3.455 1ZM3.7 3.556V6.11h21.6V3.556H3.7ZM1 21.444h16.2V24H1v-2.556Z"
         fill={props.color || defaultProps.color}
-        stroke={props.color || defaultProps.color}
       />
     </Svg>
   );
@@ -105,23 +86,17 @@ export const LogoutIcon = (props: IIconProps) => {
       width={props.size || defaultProps.size}
       height={props.size || defaultProps.size}
       fill="transparent"
-      viewBox="0 0 19 18"
+      viewBox="0 0 18 18"
     >
-      <Mask id="a" fill={props.color || defaultProps.color}>
-        <Path d="M6 18H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h4" />
-      </Mask>
-      <Path
-        d="M6 19.2a1.2 1.2 0 0 0 0-2.4v2.4ZM0 16h-1.2H0ZM2 0v-1.2V0Zm4 1.2a1.2 1.2 0 0 0 0-2.4v2.4Zm0 15.6H2v2.4h4v-2.4Zm-4 0a.8.8 0 0 1-.566-.234l-1.697 1.697A3.2 3.2 0 0 0 2 19.2v-2.4Zm-.566-.234A.8.8 0 0 1 1.2 16h-2.4a3.2 3.2 0 0 0 .937 2.263l1.697-1.697ZM1.2 16V2h-2.4v14h2.4Zm0-14a.8.8 0 0 1 .234-.566L-.263-.263A3.2 3.2 0 0 0-1.2 2h2.4Zm.234-.566A.8.8 0 0 1 2 1.2v-2.4a3.2 3.2 0 0 0-2.263.937l1.697 1.697ZM2 1.2h4v-2.4H2v2.4Z"
-        fill={props.color || defaultProps.color}
-        mask="url(#a)"
-      />
-      <Path
-        d="m13 14 5-5-5-5M18 9H6"
-        stroke={props.color || defaultProps.color}
-        strokeWidth={1.2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <G clipPath="url(#a)" fill={props.color || defaultValues.color}>
+        <Path d="m17.206 9.399.008-.008c.01-.014.022-.025.03-.04l.006-.011c.008-.015.019-.03.026-.044 0-.004.004-.008.004-.008.007-.014.015-.029.022-.047 0-.004 0-.004.004-.008.007-.014.01-.033.018-.051 0-.004 0-.007.004-.007.003-.019.01-.034.01-.052 0-.007 0-.01.004-.018.004-.015.004-.03.008-.044.003-.022.003-.04.003-.063 0-.022 0-.04-.003-.062 0-.015-.004-.03-.008-.044 0-.008 0-.011-.003-.019l-.011-.051c0-.004 0-.008-.004-.008-.004-.018-.011-.033-.018-.051 0-.004 0-.004-.004-.007l-.022-.048c0-.004-.004-.007-.004-.007-.007-.015-.014-.03-.026-.045-.003-.003-.003-.007-.007-.01-.01-.015-.018-.03-.03-.041l-.007-.007c-.014-.015-.025-.033-.044-.048L13.53 4.92a.632.632 0 0 0-.893.893l2.557 2.557H5.026a.631.631 0 1 0 0 1.26h10.17l-2.538 2.539a.632.632 0 0 0 .444 1.077.629.629 0 0 0 .445-.184l3.612-3.612c.018-.022.033-.037.047-.051Z" />
+        <Path d="M4.067 1.26H8.77a.631.631 0 1 0 0-1.26H4.067a3.426 3.426 0 0 0-3.42 3.42v11.16A3.426 3.426 0 0 0 4.067 18h4.626a.631.631 0 1 0 0-1.26H4.067c-1.19 0-2.16-.97-2.16-2.16V3.42a2.164 2.164 0 0 1 2.16-2.16Z" />
+      </G>
+      <Defs>
+        <ClipPath id="a">
+          <Path d="M0 0h18v18H0z" fill={props.color || defaultProps.color} />
+        </ClipPath>
+      </Defs>
     </Svg>
   );
 };
