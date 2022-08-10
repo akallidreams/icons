@@ -1,16 +1,19 @@
-import { Icon } from "native-base";
-import { Path } from "react-native-svg";
 import { IIconProps } from "./types";
-import { defaultValues } from "./index";
+import Svg, { Path } from "react-native-svg";
+import { defaultProps } from "./utils";
 
 export const CheckIcon = (props: IIconProps) => {
   return (
-    <Icon size={props.size || defaultValues.size} viewBox="0 0 16 12">
+    <Svg
+      width={props.size || defaultProps.size}
+      height={props.size || defaultProps.size}
+      fill="transparent"
+      viewBox="0 0 18 15"
+    >
       <Path
-        d="M1.71447 4.1325L5.93205 8.35268L6.28559 8.70643L6.63925 8.35281L14.2858 0.707011L15.2928 1.7136L6.28571 10.7207L0.706816 5.1418L1.71447 4.1325Z"
-        fill={props.color || defaultValues.color}
-        stroke={props.color || defaultValues.color}
+        d="M15.064 0 5.892 9.156l-2.975-2.97L0 9.1l2.975 2.97L5.91 15l2.917-2.912L18 2.93 15.064 0Z"
+        fill={props.color || defaultProps.color}
       />
-    </Icon>
+    </Svg>
   );
 };

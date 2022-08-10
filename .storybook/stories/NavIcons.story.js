@@ -33,11 +33,6 @@ storiesOf("Navigation Icons", module)
       )}
     />
   ))
-  .add("Account", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.AccountIcon {...styles.iconProps} />}
-    />
-  ))
   .add("Close", () => (
     <ProviderContainer
       Component={() => <AkIcons.NavIcons.CloseIcon {...styles.iconProps} />}
@@ -73,15 +68,17 @@ storiesOf("Navigation Icons", module)
       Component={() => <AkIcons.NavIcons.ProfileIcon {...styles.iconProps} />}
     />
   ))
-  .add("Proof", () => (
+  .add("PDF", () => (
     <ProviderContainer
       Component={() => <AkIcons.NavIcons.ProofIcon {...styles.iconProps} />}
     />
   ))
-  .add("Terms", () => (
+  .add("Therms", () => (
     <ProviderContainer
-      Component={() => <AkIcons.NavIcons.TermsIcon {...styles.iconProps} />}
+      Component={() => <AkIcons.NavIcons.ThermsIcon {...styles.iconProps} />}
     />
   ));
 
 //   .addDecorator((getStory) => <Center>{getStory()}</Center>)
+
+// Therms e check grossura, logout resolution
