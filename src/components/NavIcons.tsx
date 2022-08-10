@@ -1,4 +1,4 @@
-import { ClipPath, Defs, G, Mask } from "react-native-svg";
+import { ClipPath, Defs, G } from "react-native-svg";
 import { defaultValues } from ".";
 import { IIconProps } from "./types";
 import Svg, { Path } from "react-native-svg";

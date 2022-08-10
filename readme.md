@@ -13,7 +13,7 @@
 # Dependencies of package.json
 
 ```json
-"expo": "~45.0.0",
+  "expo": "~45.0.0",
   "expo-status-bar": "~1.3.0",
   "native-base": "^3.4.9",
   "react": "17.0.2",
@@ -22,5 +22,4 @@
   "react-native-safe-area-context": "4.2.4",
   "react-native-svg": "12.3.0",
   "react-native-web": "0.17.7",
-  "undefined": "react-dom/client"
 ```

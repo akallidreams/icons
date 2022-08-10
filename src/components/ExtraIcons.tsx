@@ -1,6 +1,4 @@
-import { Icon } from "native-base";
 import { IIconProps } from "./types";
-import { defaultValues } from ".";
 import Svg, { Path } from "react-native-svg";
 import { defaultProps } from "./utils";
 
