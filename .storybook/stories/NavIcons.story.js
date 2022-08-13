@@ -31,52 +31,42 @@ storiesOf("Navigation Icons", module)
           </Link>
         </Center>
       )}
-    />
+ 
   ))
   .add("Close", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.CloseIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.CloseIcon {...styles.iconProps} />
   ))
   .add("Home", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.HomeIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.HomeIcon {...styles.iconProps} />
+ 
   ))
   .add("Library", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.LibIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.LibIcon {...styles.iconProps} />
+ 
   ))
   .add("Logout", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.LogoutIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.LogoutIcon {...styles.iconProps} />
+ 
   ))
   .add("Menu", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.MenuIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.MenuIcon {...styles.iconProps} />
+ 
   ))
   .add("Policy", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.PolicyIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.PolicyIcon {...styles.iconProps} />
+ 
   ))
   .add("Profile", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.ProfileIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.ProfileIcon {...styles.iconProps} />
+ 
   ))
   .add("PDF", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.ProofIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.ProofIcon {...styles.iconProps} />
+ 
   ))
   .add("Therms", () => (
-    <ProviderContainer
-      Component={() => <AkIcons.NavIcons.ThermsIcon {...styles.iconProps} />}
-    />
+    <AkIcons.NavIcons.ThermsIcon {...styles.iconProps} />
+ 
   ));
 
 //   .addDecorator((getStory) => <Center>{getStory()}</Center>)

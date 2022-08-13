@@ -1,3 +1,17 @@
+# Quick start
+
+This is a icon library based on our [design system](https://www.figma.com/file/QfifXKyRUwYppvNLNuLfnE/Components-Akalli?node-id=0%3A1).
+
+## Instalation
+
+`npm i @akalli/icons react-native-svg`
+
+**Example:**
+
+```tsx
+<HomeIcon size="20px" color="#4287f5" />
+```
+
 # Publish a new version
 
 1.  Replace main with `index.ts` on `package.json`
@@ -15,7 +29,6 @@
 ```json
   "expo": "~45.0.0",
   "expo-status-bar": "~1.3.0",
-  "native-base": "^3.4.9",
   "react": "17.0.2",
   "react-dom": "17.0.2",
   "react-native": "0.68.2",
